@@ -69,8 +69,8 @@ const Footer = () => {
 export default Footer
 
 const FooterWrapper = styled.footer`
-    background-color: #555;
-    color: #bbb;
+    background-color: #FAA307;
+    color: #03071E;
     line-height: 1.5rem;
 `
 
@@ -93,7 +93,7 @@ const SectionMain = styled.section`
 `
 
 const SectionMainHeader = styled.h3`
-    color: #fff;
+    color: #03071E;
     font-size: 1.2rem;
     padding-bottom: 0.625rem;
 `
@@ -106,6 +106,7 @@ const MenuList = styled.ul`
 const SectionLegal = styled.section`
     padding: 0.9375rem 1.875rem;
     background-color: #333;
+    color: #fff;
 `
 
 const LegalList =styled.ul`
