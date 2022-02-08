@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components'
-import Footer from '../components/Footer'
+
 // import LatestBlogPosts from '../components/Start/LastestBlog'
 
 import fetch from 'isomorphic-unfetch'
@@ -29,10 +29,6 @@ export default function Home() {
           Vi hjälper företag synas på nätet och som du noterar håller vi på att bygga om lite på vår sajt :)
         </p>
       </main>
-
-      <Footer>
-        &copy; Omnidig AB 2016-2022
-      </Footer>
     </div>
   )
 }
@@ -48,13 +44,4 @@ padding: 0.2rem 0;
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;
   }
-`
-
-const Foo = styled.footer`
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
 `
