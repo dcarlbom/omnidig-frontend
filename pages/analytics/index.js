@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export default function Home() {
     return(
         <Wrapper>
-            <h1>SEO</h1>
-            <p>Här kommer snart information om sökmotoroptimering och vad vi kan hjälpa dig och ditt företag med.</p>
+            <h1>Google Analytics</h1>
+            <p>Här kommer snart information om Google Analytics och vad vi kan hjälpa dig och ditt företag med.</p>
 
         </Wrapper>
     )

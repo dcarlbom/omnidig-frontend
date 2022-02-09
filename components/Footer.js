@@ -11,11 +11,26 @@ const Footer = () => {
                         Våra Tjänster
                     </SectionMainHeader>
                     <MenuList>
-                        <li><a href="#">SEO</a></li>
-                        <li><a href="#">Google Analytics</a></li>
-                        <li><a href="#">Google Tag Manager</a></li>
-                        <li><a href="#">Google Ads</a></li>
-                        <li><a href="#">Webbdesign</a></li>
+                    <li>
+                        <Link href='/seo'>
+                            <a>SEO</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href='/analytics'>
+                            <a>Google Analytics</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href='/gtm'>
+                            <a>Google Tag Manager</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href='/google-ads'>
+                            <a>Google Ads</a>
+                        </Link>
+                    </li>
                     </MenuList>
                 </MainItem>
 

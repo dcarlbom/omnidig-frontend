@@ -8,7 +8,6 @@ const Header = () => {
 
     const handleClick = () => {
         setActive(!active);
-        console.log("click");
     }
     
     return (
@@ -36,14 +35,19 @@ const Header = () => {
                             SEO
                         </a>
                     </Link>
-                    <Link href='/'>
+                    <Link href='/analytics'>
                         <a className='mobile-item'>
                             Google Analytics
                         </a>
                     </Link>
-                    <Link href='/'>
+                    <Link href='/gtm'>
                         <a className='mobile-item'>
                             Google Tag Manager
+                        </a>
+                    </Link>
+                    <Link href='/google-ads'>
+                        <a className='mobile-item'>
+                            Google Ads
                         </a>
                     </Link>
                 </div>
@@ -56,22 +60,22 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href='/'>
+                        <Link href='/analytics'>
                             <a>Google Analytics</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href='/'>
+                        <Link href='/gtm'>
                             <a>Google Tag Manager</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href='/'>
+                        <Link href='/google-ads'>
                             <a>Google Ads</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href='/'>
+                        <Link href='/om-oss/kontakt'>
                             <a>Kontakt</a>
                         </Link>
                     </li>
