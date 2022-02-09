@@ -360,6 +360,12 @@ const GlobalStyle = createGlobalStyle`
                 margin: 0 auto;
                 padding: 30px;
             }
+
+            // OMNIDIG CUSTOM
+
+            h1 {
+                margin-bottom: 1rem;
+            }
 `
 
 export default GlobalStyle

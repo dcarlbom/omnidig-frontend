@@ -16,9 +16,9 @@ export default function Home() {
         <meta name="description" content="Static, fix this." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <TopBar>
+      {/* <TopBar>
         Vi håller för närvarande på att bygga om omnidig.se
-      </TopBar>
+      </TopBar> */}
       <main className={styles.main}>
         <h1 className={styles.title}>
           OMNIDIG
@@ -33,7 +33,7 @@ export default function Home() {
   )
 }
 
-const TopBar = styled.div`
+/* const TopBar = styled.div`
 display: flex;
 -webkit-box-pack: center;
 justify-content: center;
@@ -44,4 +44,4 @@ padding: 0.2rem 0;
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;
   }
-`
+` */
