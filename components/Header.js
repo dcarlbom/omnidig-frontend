@@ -33,10 +33,10 @@ const Header = () => {
             {/* <!-- Mobile Menu open: "block", Menu closed: "hidden" --> */}
             <div className={`${ active ? '' : 'hidden' } items-center md:flex` }>
                 <div className="flex flex-col md:flex-row md:mx-6">
-                    <a className="mt-4 mb-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Home</a>
-                    <a className="my-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Shop</a>
-                    <a className="my-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Contact</a>
-                    <a className="my-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">About</a>
+                    <Link href="/seo"><a onClick={handleClick} className="mt-4 mb-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0">SEO</a></Link>
+                    <Link href="/analytics"><a onClick={handleClick} className="my-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0">Google Analytics</a></Link>
+                    <Link href="/gtm"><a onClick={handleClick} className="my-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0">Google Tag Manager</a></Link>
+                    <Link href="/ads"><a onClick={handleClick} className="my-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0">Google Ads</a></Link>
                 </div>
 
                 {/* <div className="flex justify-center md:block">
