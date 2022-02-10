@@ -40,7 +40,7 @@ const Footer = () => {
                     </SectionMainHeader>
                     <MenuList>
                         <li><a href="#">Vårt Team</a></li>
-                        <li><a href="#">Om företaget</a></li>
+                        <li><a href="/om-oss">Om företaget</a></li>
                     </MenuList>
                 </MainItem>
 
@@ -64,8 +64,8 @@ const Footer = () => {
                     <MenuList>
                         <li>Sälnaberg 553</li>
                         <li>195 96 Rosersberg</li>
-                        
-                        <li>559029-0119</li>
+                        <li>&nbsp;</li>
+                        <li>070-605 06 70</li>
                     </MenuList>
                 </MainItem>
             </SectionMain>
