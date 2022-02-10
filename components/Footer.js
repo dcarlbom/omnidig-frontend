@@ -39,8 +39,12 @@ const Footer = () => {
                         Om oss
                     </SectionMainHeader>
                     <MenuList>
-                        <li><a href="#">Vårt Team</a></li>
-                        <li><a href="/om-oss">Om företaget</a></li>
+                        <li><Link href='#'>
+                            <a>Vårt Team</a>
+                        </Link></li>
+                        <li><Link href='/om-oss'>
+                            <a>Om Företaget</a>
+                        </Link></li>
                     </MenuList>
                 </MainItem>
 
