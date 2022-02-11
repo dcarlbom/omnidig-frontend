@@ -18,7 +18,7 @@ export default function BloggList({ posts }) {
                 <h2 className="text-2xl font-semibold text-gray-800 uppercase">Våra senaste artiklar</h2>
                 <div className='container'>
                     {posts.data.map(post => (
-                        <p>{post.attributes.title}</p>
+                        <p key={post.id}>{post.attributes.title}</p>
                     ))}
                 </div>
             </div>
