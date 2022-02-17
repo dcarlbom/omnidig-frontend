@@ -5,7 +5,7 @@ function ArticleCard ({ post }) {
     const { NEXT_PUBLIC_STRAPI_URL } = process.env
     
     const postDate = post.attributes.published_date
-    const readableDate = dayjs(postDate).format('D MMM, YYYY')
+    //const readableDate = dayjs(postDate).format('D MMM, YYYY')
 
     return (
         <div className="p-2 lg:p-10">  
