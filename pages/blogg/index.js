@@ -1,5 +1,5 @@
-import { faMoneyBillWave } from '@fortawesome/free-solid-svg-icons'
 import fetch from 'isomorphic-unfetch'
+import ArticleCard from '../../components/ArticleCard'
 
 export default function BloggList({ posts }) {
     console.log(posts)
@@ -17,9 +17,11 @@ export default function BloggList({ posts }) {
             <div>
                 <h2 className="text-2xl font-semibold text-gray-800 uppercase">Våra senaste artiklar</h2>
                 <div className='container'>
-                    {posts.data.map(post => (
-                        <p key={post.id}>{post.attributes.title}</p>
-                    ))}
+                    <div className='p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5'>
+                        {posts.data.map(post => (
+                            <ArticleCard key={post.id} post={post}></ArticleCard>
+                        ))}
+                    </div>
                 </div>
             </div>
             
@@ -29,9 +31,9 @@ export default function BloggList({ posts }) {
 }
 
 export async function getServerSideProps() {
-    const { STRAPI_API_URL } = process.env
+    const { NEXT_PUBLIC_STRAPI_URL } = process.env
 
-    const res = await fetch(`${STRAPI_API_URL}/api/posts?populate=*`)
+    const res = await fetch(`${NEXT_PUBLIC_STRAPI_URL}/api/posts?populate=*`)
     const data = await res.json()
 
     return {
